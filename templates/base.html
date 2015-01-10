@@ -87,6 +87,8 @@
         <link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
               title="{{ SITENAME }} RSS Feed"/>
     {% endif %}
+    <!-- fonts go here -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -99,6 +101,15 @@
 {% endif %}
 <!-- End Banner -->
 <div class="container">
+    <!-- <div class="row">
+        <div class="col-md-12 front-panel">
+
+            <h1> <i class="fa fa-chevron-right fa-lg"></i> Programming </h1>
+            <h1 style="padding-left: 200px"> <i class="fa fa-chevron-right fa-lg"></i> Technology </h1>
+            <h1 style="padding-left: 400px"> <i class="fa fa-chevron-right fa-lg"></i>Everything Else </h1>
+        </div>
+    </div>
+     -->
     <div class="row">
         {% if not HIDE_SIDEBAR or ABOUT_ME %}
         <div class="col-sm-9">
@@ -107,9 +118,10 @@
         {% endif %}
         {% block breadcrumbs %}
         {% endblock %}
-
+        <main>
         {% block content %}
         {% endblock %}
+        </main>
         </div>
         {% if not HIDE_SIDEBAR or ABOUT_ME %}
         <div class="col-sm-3" id="sidebar">

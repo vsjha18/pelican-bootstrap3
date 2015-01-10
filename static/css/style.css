@@ -223,3 +223,41 @@ figure.floatcenter, .align-center {
 }
 
 /* My Styles */
+body {
+    background-color: rgba(236, 240, 241,1.0);
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.4em;
+}
+
+article {
+    border-radius: 10px;
+    /*border: 1px solid rgba(52, 152, 219,1.0);*/
+    border: 1px solid #4582EC;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    box-shadow: 0 0 5px #888888;
+}
+
+.front-panel {
+    background-color: #34495e;
+    height: 300px;
+    font-family: font-family: 'Lobster', cursive;
+    color: #ecf0f1
+}
+
+.front-panel h1 {
+    font-family: 'Lobster', cursive;
+    color: #ecf0f1;
+    font-size: 3em;
+    text-shadow: 4px 4px 2px rgba(231, 76, 60,1.0);
+}
