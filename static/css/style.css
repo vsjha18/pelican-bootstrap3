@@ -77,7 +77,7 @@ body {
 a, a:hover {
     color: inherit;
 }
-
+/*
 .entry-content a {
     text-decoration: none;
     border-bottom: 1px dotted;
@@ -98,7 +98,7 @@ a, a:hover {
     margin-bottom: 2px;
 }
 
-.summary img {
+*/.summary img {
     max-width: 100%;
     height: auto;
 }
@@ -225,7 +225,18 @@ figure.floatcenter, .align-center {
 /* My Styles */
 body {
     background-color: rgba(236, 240, 241,1.0);
+    background-image:  url("http://www.transparenttextures.com/patterns/circles.png");
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Muli', sans-serif;*/
 }
+
+.navbar a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*a, h1, h2, h3, p, #sidebar {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+*/
 h1 {
     font-size: 1.8em;
 }
@@ -237,14 +248,53 @@ h3 {
 }
 
 article {
-    border-radius: 10px;
-    /*border: 1px solid rgba(52, 152, 219,1.0);*/
-    border: 1px solid #4582EC;
     background-color: #fff;
     padding-top: 5px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     padding-bottom: 1em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+article p, li {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+article h1, h2, h3 {
+    font-family: inherit;
+}
+
+article blockquote {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    color: #1863E6;
+}
+
+article blockquote li {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    color: #1863E6;
+}
+
+
+.rounded {
+    border-radius: 10px;
+}
+
+.bordered {
+    border: 1px solid #4582EC;
+}
+
+.shadowed {
+    -webkit-box-shadow: 0 0 5px #888888;
+    -moz-box-shadow: 0 0 5px #888888;
     box-shadow: 0 0 5px #888888;
 }
 
@@ -260,4 +310,8 @@ article {
     color: #ecf0f1;
     font-size: 3em;
     text-shadow: 4px 4px 2px rgba(231, 76, 60,1.0);
+}
+
+#sidebar {
+    margin-top: 30px;
 }

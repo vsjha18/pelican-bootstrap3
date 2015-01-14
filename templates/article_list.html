@@ -2,7 +2,7 @@
 {% block content %}
     {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
-            <article>
+            <article class="rounded bordered shadowed">
                 <header>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 </header>
@@ -16,7 +16,6 @@
                     <a class="btn btn-primary" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
                 </div>
             </article>
-            <hr/>
         {% endfor %}
     {% endif %}
 
