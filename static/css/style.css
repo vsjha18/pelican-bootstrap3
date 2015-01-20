@@ -217,6 +217,7 @@ figure.floatcenter, .align-center {
 html {
     font-size: 100%;
 }
+
 body {
     padding-top: 70px;
     font-size: 100%;
@@ -229,11 +230,17 @@ body {
 
 .navbar a {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
 }
-/*a, h1, h2, h3, p, #sidebar {
-    font-family: 'Source Sans Pro', sans-serif;
+
+/* for navbar brand */
+a.navbar-brand {
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #e74c3c;
+    text-shadow: 2px 2px 5px #34495e;
 }
-*/
+
 h1 {
     font-size: 1.8em;
 }
@@ -245,6 +252,7 @@ h3 {
 }
 /* btn-primary color : #0079A1*/
 
+/* article related styles */
 article {
     background-color: #fff;
     padding-top: 5px;
@@ -264,10 +272,22 @@ article p,article li {
 
 article h1, h2, h3 {
     font-family: inherit;
-    color: #4582ec;
-    /*font-size: 1.2em;*/
+    color: #2780E3;
     font-weight: 300;
 }
+
+article a {
+    color: #2780E3;
+}
+
+article a:hover {
+    color: #2780E3;
+    text-shadow: 0 0 3px #aaaaaa;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
 
 article.p:first-child:first-letter { float: left; color: #903; font-size: 3em; line-height: 45px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
 
@@ -285,10 +305,11 @@ article blockquote li {
     color: #1863E6;
 }
 
-article a:hover {
-    text-shadow: 0 0 3px #888888;
-    text-decoration: none;
-    font-style: italic;
+
+/* only for article summaries */
+article.summary {
+    box-shadow: inset 0 0 5px #eeeeee;
+    margin-top: 25px;
 }
 
 article.summary:hover  {
@@ -298,11 +319,7 @@ article.summary:hover  {
     box-shadow: 0 0 5px #888888;
 }
 
-article.summary {
-    box-shadow: inset 0 0 5px #eeeeee;
-    margin-top: 25px;
-}
-
+/* generic classes for look and feel*/
 .rounded {
     border-radius: 10px;
 }
@@ -318,12 +335,81 @@ article.summary {
     box-shadow: inset 0 0 5px #888888;
 }
 
+/* for post info block which shows date and tags */
 .post-info {
     background-color: #fafafa;
     padding: 10px;
     margin-bottom: 10px;
 }
 
+/*to remove margin between navbar and page contents*/
+
+#wrapper {
+    margin-top: -4px;
+}
+
+/*sidebar deocrations */
+
+/* sidebar box and high level settings */
+#sidebar {
+    border: 1px solid #fafafa;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 400;
+    color: #2780E3;
+}
+
+/* for sidebar text*/
+#sidebar li, #sidebar a {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    background-color: #fafafa;
+}
+
+#sidebar span.icon-label {
+    font-weight: 400;
+    line-height: 1;
+}
+/*
+.block {
+    color: #2780E3;
+}*/
+
+/* this is for sidebar paragraph boxes */
+.block {
+    background-color: #fafafa;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* change the footer color here*/
+#footer {
+    background-color: #2780E3;
+    color: #fff;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .front-panel {
     background-color: #34495e;
     height: 300px;
@@ -337,45 +423,4 @@ article.summary {
     font-size: 3em;
     text-shadow: 4px 4px 2px rgba(231, 76, 60,1.0);
 }
-
-/*to remove margin between navbar and page contents*/
-
-#wrapper {
-    margin-top: -4px;
-}
-
-/*sidebar deocrations */
-
-#sidebar {
-    /*background-color: #4582ec;*/
-    /*color: #fafafa;*/
-    /*box-shadow: inset 0 0 10px #001100;*/
-    border: 1px solid #fafafa;
-    font-size: 1em;
-    line-height: 1;
-    font-weight: 400;
-}
-
-#sidebar li, #sidebar a {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: inherit;
-    background-color: #fafafa;
-}
-
-.block {
-    background-color: #fafafa;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-#footer {
-    background-color:   #4582EC;
-    color: #fff;
-    padding: 15px;
-}
+*/
